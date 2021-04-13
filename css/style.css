@@ -1,0 +1,174 @@
+:root	
+{
+	/*horizon-theme-colors*/
+	--title:  	 #ffffff;
+	--subtitle:  #bd4662;
+	--section:	 #20222b;
+	--border: 	 #1d1f27;
+	--list:		 #f09383c7; 
+	--hover:	 #FAB795;
+	--bottom: 	 #7a00ff;
+	--background:#1C1E26;
+
+}
+
+
+body
+{
+    font-family: 'Open Sans';
+    background-color: var(--background);
+
+}
+
+
+section
+{
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	max-width: 500px;
+	border-radius: 10px;
+	background-color: var(--section);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    border-bottom: 2px solid var(--subtitle);
+
+}
+
+
+header 
+{
+	border-radius: 10px;
+	width: 100%;
+	height: 80px;
+	background-size: cover;
+	
+}
+
+
+.Photo 
+{
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translateY(-50%);
+	border: 8px solid var(--border);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+	
+}
+
+
+section h1 
+{
+	font-size: 25px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+    color: var(--title);
+
+}
+
+
+div 
+{
+	margin-top: 15px;
+	padding: 15px;
+	border-radius: 15px;
+	background-color: var(--background);
+	
+}
+
+
+section h2
+{
+	margin-top: 0%;
+	text-align: center;
+    font-size: 14px;
+    color: var(--subtitle);
+
+}
+
+
+div ol li
+{
+	margin-bottom: 10px;
+	text-align: left;
+    font-size: 10px;
+	color: var(--list);
+
+}
+
+
+a
+{
+	color: var(--list);
+    text-decoration: none;
+
+}
+
+
+@keyframes fade {100% { color: var(--hover);}}
+a:hover {animation: fade 0.5s linear forwards;}
+
+
+.git
+{
+	width: 30px;
+	height: 30px;
+	display: block;	
+	margin-left: auto;
+	filter:opacity(20%);
+	
+}
+
+
+/*Templete: https://codepen.io/Huhtamaki/pen/GPzwPY
+
+	.bloco 
+	{
+		position: relative;
+
+	}
+
+	.bloco:before, .bloco:after 
+	{ 
+		border-radius: 10px;
+		content: '';
+		position: absolute;
+		left: -2px;
+		top: -2px;
+		
+		background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+			#0000ff, #00ff00,#ffff00, #ff0000);
+		background-size: 400%;
+		width: calc(100% + 4px);
+		height: calc(100% + 4px);
+		z-index: -1;
+		animation: steam 20s linear infinite;
+
+	}
+
+	@keyframes steam 
+	{
+		0% {
+			background-position: 0 0;
+		}
+		50% {
+			background-position: 400% 0;
+		}
+		100% {
+			background-position: 0 0;
+		}
+		
+	}
+
+	.bloco:after 
+	{
+		filter: blur(50px);
+
+	}
+*/
